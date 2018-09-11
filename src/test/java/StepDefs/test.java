@@ -19,7 +19,7 @@ public class test {
         driver.get("http://www.google.com/xhtml");
         Thread.sleep(1000);
         WebElement searchBox = driver.findElement(By.name("q"));
-        searchBox.sendKeys("Joehoe");
+        searchBox.sendKeys("Joehhbmnoe");
         searchBox.submit();
     }
 
