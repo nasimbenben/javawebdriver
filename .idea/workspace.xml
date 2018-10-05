@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8cc3a3cc-4552-447e-a95e-9bc5d9fae039" name="Default Changelist" comment="">
+    <list default="true" id="8cc3a3cc-4552-447e-a95e-9bc5d9fae039" name="Default Changelist" comment="jnk">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/MultiSensePages/dashBoardPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefs/CreteDeviceCasSetSIMSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/CreateDeviceCasSetSIM.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefs/POC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefs/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/POC.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/het_aanpassen_in_jira.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/POC.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefs/POC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefs/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test.feature" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,43 +34,55 @@
     <session id="1838627088">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="37" />
           <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.12" value="5" />
+          <entry key="project.open.time.13" value="6" />
+          <entry key="project.open.time.14" value="3" />
+          <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.17" value="3" />
+          <entry key="project.open.time.18" value="2" />
+          <entry key="project.open.time.19" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.20" value="5" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.25" value="2" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="feature" value="4" />
-          <entry key="java" value="15" />
-          <entry key="xml" value="1" />
+          <entry key="feature" value="11" />
+          <entry key="java" value="39" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Cucumber" value="4" />
-          <entry key="JAVA" value="15" />
-          <entry key="XML" value="1" />
+          <entry key="Cucumber" value="11" />
+          <entry key="JAVA" value="39" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="feature" value="24" />
-          <entry key="java" value="316" />
-          <entry key="xml" value="12" />
+          <entry key="feature" value="1463" />
+          <entry key="java" value="1994" />
+          <entry key="txt" value="3" />
+          <entry key="xml" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Cucumber" value="24" />
-          <entry key="JAVA" value="316" />
-          <entry key="XML" value="12" />
+          <entry key="Cucumber" value="1463" />
+          <entry key="JAVA" value="1994" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="XML" value="15" />
         </counts>
       </usages-collector>
     </session>
@@ -63,64 +90,54 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/StepDefs/POC.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/AdminPages/ConnexoAdminOverviewPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="40" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="40" />
+            <state relative-caret-position="120">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/MultiSensePages/dashBoardPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#243#244#0" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/StepDefs/test.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/StepDefs/CreteDeviceCasSetSIMSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="64" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="64" />
+            <state relative-caret-position="223">
+              <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/CreateDeviceCasSetSIM.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/POC.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/test.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Runners/MyRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -135,7 +152,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>throw new PendingException();</find>
+      <find>i_click_on</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -147,13 +171,22 @@
         <option value="$PROJECT_DIR$/src/test/java/testrunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/AllFeatureFiles/POC.feature" />
         <option value="$PROJECT_DIR$/src/test/java/Runners/MyRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/POC.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/StepDefs/POC.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/test.feature" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/Login_Page.java" />
         <option value="$PROJECT_DIR$/src/test/java/StepDefs/test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/BasePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/TestCase_POF.java" />
+        <option value="$PROJECT_DIR$/src/test/java/StepDefs/POC.java" />
+        <option value="$PROJECT_DIR$/src/test/java/StepDefs/CreteDeviceCasSetSIMStepsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/withouttest.feature" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/StepDefs/withouttestSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/AdminPages/ConnexoAdminOverviewPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/MultiSensePages/dashBoardPage.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/CreateDeviceCasSetSIM.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/StepDefs/CreteDeviceCasSetSIMSteps.java" />
       </list>
     </option>
   </component>
@@ -181,7 +214,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
@@ -237,6 +270,24 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Pages" type="462c0819:PsiDirectoryNode" />
+              <item name="AdminPages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javawebdriver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javawebdriver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Pages" type="462c0819:PsiDirectoryNode" />
+              <item name="MultiSensePages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javawebdriver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javawebdriver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Runners" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -258,14 +309,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536314194076" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538138735166" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -277,14 +328,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="StepDefs" />
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="StepDefs" />
       <recent name="Pages" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources" />
@@ -302,15 +354,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: add to basket (1)">
-    <configuration name="Feature: POC (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Scenario: As a end user i want to change the SIM details for a device">
+    <configuration name="TestCase_POF" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Pages.TestCase_POF" />
+      <module name="javawebdriver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Pages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: CreateDeviceCasSetSIM" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/POC.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/CreateDeviceCasSetSIM.feature" />
       <option name="GLUE" value="StepDefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="javawebdriver" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: POC" />
+      <option name="SUGGESTED_NAME" value="Feature: CreateDeviceCasSetSIM" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -321,14 +386,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: withouttest" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/test.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/withouttest.feature" />
       <option name="GLUE" value="StepDefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="javawebdriver" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: test" />
+      <option name="SUGGESTED_NAME" value="Feature: withouttest" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -339,15 +404,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: add to basket (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: As a end user i want to change the SIM details for a device (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/test.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/withouttest.feature" />
       <option name="GLUE" value="StepDefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="javawebdriver" />
-      <option name="NAME_FILTER" value="^add to basket$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^add to basket$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: add to basket" />
+      <option name="NAME_FILTER" value="^As a end user i want to change the SIM details for a device$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^As a end user i want to change the SIM details for a device$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: As a end user i want to change the SIM details for a device" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -358,53 +423,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: add to basket" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: As a end user i want to change the SIM details for a device" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/POC.feature" />
-      <option name="GLUE" value="StepDefs" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/CreateDeviceCasSetSIM.feature" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="javawebdriver" />
-      <option name="NAME_FILTER" value="^add to basket$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^add to basket$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: add to basket" />
+      <option name="NAME_FILTER" value="^As a end user i want to change the SIM details for a device$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^As a end user i want to change the SIM details for a device$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: As a end user i want to change the SIM details for a device" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javawebdriver" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Runners.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Runners" />
-      <option name="MAIN_CLASS_NAME" value="Runners.MyRunner" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber java.Scenario: add to basket" />
-      <item itemvalue="JUnit.MyRunner" />
-      <item itemvalue="Cucumber java.Feature: POC (1)" />
-      <item itemvalue="Cucumber java.Scenario: add to basket (1)" />
-      <item itemvalue="Cucumber java.Feature: test" />
+      <item itemvalue="Cucumber java.Scenario: As a end user i want to change the SIM details for a device" />
+      <item itemvalue="Cucumber java.Feature: CreateDeviceCasSetSIM" />
+      <item itemvalue="Application.TestCase_POF" />
+      <item itemvalue="Cucumber java.Feature: withouttest" />
+      <item itemvalue="Cucumber java.Scenario: As a end user i want to change the SIM details for a device (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Scenario: add to basket (1)" />
-        <item itemvalue="Cucumber java.Feature: POC (1)" />
-        <item itemvalue="Cucumber java.Feature: test" />
-        <item itemvalue="JUnit.MyRunner" />
-        <item itemvalue="Cucumber java.Scenario: add to basket" />
+        <item itemvalue="Cucumber java.Scenario: As a end user i want to change the SIM details for a device" />
+        <item itemvalue="Cucumber java.Feature: CreateDeviceCasSetSIM" />
+        <item itemvalue="Cucumber java.Feature: withouttest" />
+        <item itemvalue="Cucumber java.Scenario: As a end user i want to change the SIM details for a device (1)" />
+        <item itemvalue="Application.TestCase_POF" />
       </list>
     </recent_temporary>
   </component>
@@ -425,50 +475,90 @@
       <workItem from="1536221120574" duration="8673000" />
       <workItem from="1536314749156" duration="201000" />
       <workItem from="1536318802921" duration="556000" />
-      <workItem from="1536666759956" duration="617000" />
+      <workItem from="1536666759956" duration="3986000" />
+      <workItem from="1536839010016" duration="130000" />
+      <workItem from="1536913963606" duration="2535000" />
+      <workItem from="1537186930396" duration="155000" />
+      <workItem from="1537257719658" duration="158000" />
+      <workItem from="1537348304773" duration="229000" />
+      <workItem from="1537365732953" duration="4194000" />
+      <workItem from="1537725506885" duration="151000" />
+      <workItem from="1538039671832" duration="1038000" />
+      <workItem from="1538041071743" duration="1674000" />
+      <workItem from="1538042890744" duration="1274000" />
+      <workItem from="1538046186441" duration="1402000" />
+      <workItem from="1538048003122" duration="1423000" />
+      <workItem from="1538049829269" duration="1732000" />
+      <workItem from="1538051935864" duration="1720000" />
+      <workItem from="1538053796704" duration="1337000" />
+      <workItem from="1538055627868" duration="1757000" />
+      <workItem from="1538057493956" duration="1731000" />
+      <workItem from="1538059525257" duration="1769000" />
+      <workItem from="1538063307157" duration="565000" />
+      <workItem from="1538124585530" duration="705000" />
+      <workItem from="1538126399822" duration="1748000" />
+      <workItem from="1538128210542" duration="1195000" />
+      <workItem from="1538133740663" duration="1772000" />
+      <workItem from="1538135568904" duration="1140000" />
+      <workItem from="1538137469492" duration="675000" />
+      <workItem from="1538139329378" duration="639000" />
+      <workItem from="1538141164791" duration="1679000" />
+      <workItem from="1538143185383" duration="1070000" />
+      <workItem from="1538565888128" duration="682000" />
+      <workItem from="1538641886232" duration="336000" />
+      <workItem from="1538662843851" duration="635000" />
+      <workItem from="1538734213184" duration="138000" />
     </task>
+    <task id="LOCAL-00001" summary="jnk">
+      <created>1536673360593</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1536673360593</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyRunner - 2018.08.22 at 14h 00m 54s.xml">
-      <configuration name="MyRunner" configurationId="JUnit" />
+    <history-entry file="Scenario__As_a_end_user_i_want_to_change_the_SIM_details_for_a_device - 2018.09.28 at 13h 30m 08s.xml">
+      <configuration name="Scenario: As a end user i want to change the SIM details for a device" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__POC_(1) - 2018.09.05 at 16h 21m 29s.xml">
-      <configuration name="Feature: POC (1)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__CreateDeviceCasSetSIM - 2018.09.28 at 13h 30m 22s.xml">
+      <configuration name="Feature: CreateDeviceCasSetSIM" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__POC_(1) - 2018.09.05 at 16h 27m 28s.xml">
-      <configuration name="Feature: POC (1)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__As_a_end_user_i_want_to_change_the_SIM_details_for_a_device - 2018.09.28 at 13h 31m 59s.xml">
+      <configuration name="Scenario: As a end user i want to change the SIM details for a device" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__add_to_basket_(1) - 2018.09.06 at 15h 49m 13s.xml">
-      <configuration name="Scenario: add to basket (1)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__CreateDeviceCasSetSIM - 2018.09.28 at 13h 32m 09s.xml">
+      <configuration name="Feature: CreateDeviceCasSetSIM" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__test - 2018.09.06 at 15h 49m 56s.xml">
-      <configuration name="Feature: test" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__As_a_end_user_i_want_to_change_the_SIM_details_for_a_device - 2018.09.28 at 13h 33m 52s.xml">
+      <configuration name="Scenario: As a end user i want to change the SIM details for a device" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__test - 2018.09.06 at 15h 51m 11s.xml">
-      <configuration name="Feature: test" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__CreateDeviceCasSetSIM - 2018.09.28 at 13h 34m 03s.xml">
+      <configuration name="Feature: CreateDeviceCasSetSIM" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__test - 2018.09.06 at 15h 54m 20s.xml">
-      <configuration name="Feature: test" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__As_a_end_user_i_want_to_change_the_SIM_details_for_a_device - 2018.09.28 at 13h 47m 47s.xml">
+      <configuration name="Scenario: As a end user i want to change the SIM details for a device" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__POC_(1) - 2018.09.06 at 15h 55m 32s.xml">
-      <configuration name="Feature: POC (1)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__CreateDeviceCasSetSIM - 2018.09.28 at 13h 47m 59s.xml">
+      <configuration name="Feature: CreateDeviceCasSetSIM" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__add_to_basket_(1) - 2018.09.06 at 15h 55m 51s.xml">
-      <configuration name="Scenario: add to basket (1)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__CreateDeviceCasSetSIM - 2018.09.28 at 13h 49m 02s.xml">
+      <configuration name="Feature: CreateDeviceCasSetSIM" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__add_to_basket_(1) - 2018.09.06 at 16h 48m 19s.xml">
-      <configuration name="Scenario: add to basket (1)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__As_a_end_user_i_want_to_change_the_SIM_details_for_a_device - 2018.09.28 at 14h 13m 16s.xml">
+      <configuration name="Scenario: As a end user i want to change the SIM details for a device" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20869000" />
+    <option name="totallyTimeSpent" value="61626000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25605816" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26898223" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -476,17 +566,17 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3780822" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3178082" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.23357664" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32876712" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.32554746" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -495,8 +585,38 @@
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.13893376" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.073505655" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22051696" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4041096" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.23357664" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32739726" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.073505655" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -504,71 +624,95 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="jnk" />
+    <option name="LAST_COMMIT_MESSAGE" value="jnk" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/seleniumaster/javawebdriver/POC/test.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/TestTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/POC.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/testrunner.java" />
-    <entry file="file://$PROJECT_DIR$/target/test-classes/POC.feature">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/POC.feature" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Login_Page.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/LoginPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/BasePage.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/POC.feature" />
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5-sources.jar!/cucumber/runtime/java/DefaultJavaObjectFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="429">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefs/POC.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefs/CreteDeviceCasSetSIMStepsTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/test.feature" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.7.0/selenium-api-3.7.0-sources.jar!/org/openqa/selenium/WebElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="40" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="143">
+          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/POC.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefs/POC.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="287">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/test.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/TestCase_POF.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefs/withouttestSteps.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefs/test.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/withouttest.feature" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Runners/MyRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/AdminPages/ConnexoAdminOverviewPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/CreateDeviceCasSetSIM.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="27" />
+        <state relative-caret-position="60">
+          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefs/test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/MultiSensePages/dashBoardPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="64" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="64" />
+        <state relative-caret-position="120">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefs/CreteDeviceCasSetSIMSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
         </state>
       </provider>
     </entry>
