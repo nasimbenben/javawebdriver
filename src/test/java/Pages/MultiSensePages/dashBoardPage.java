@@ -1,12 +1,10 @@
 package Pages.MultiSensePages;
 
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class dashBoardPage {
@@ -87,7 +85,7 @@ public class dashBoardPage {
 
     public WebElement deviceAttributesMultipleElement(String object, String Attribute){
 
-    WebElement dynElm =   driver.findElement(By.xpath(" //table[contains(.,'"+object.trim()+"')]//label[contains(.,'"+Attribute.trim()+"')]/../following-sibling::td[1]"));
+    WebElement dynElm =   driver.findElement(By.xpath("//table[contains(.,'"+object.trim()+"')]//label[contains(.,'"+Attribute.trim()+"')]/../following-sibling::td[1]//div[@role ='textbox']"));
     return dynElm;
 
     }
@@ -97,7 +95,7 @@ public class dashBoardPage {
 
     public WebElement deviceAttributesActionButton(String button){
 
-     WebElement dynElm =   driver.findElement(By.xpath("//span[contains(.,'Actions')]/span[2]"));
+     WebElement dynElm =   driver.findElement(By.xpath("//span[contains(.,'"+button.trim()+"')]/span[2]"));
       return dynElm;
 
       }
@@ -105,7 +103,7 @@ public class dashBoardPage {
 
     public WebElement deviceAttributesActionSubButton(String subButton){
 
-     WebElement dynElm =   driver.findElement(By.xpath("//span[contains(.,Edit \'"+subButton.trim()+"\')]"));
+     WebElement dynElm =   driver.findElement(By.xpath("//a//span[contains(.,'"+subButton.trim()+"')]"));
       return dynElm;
 
     }
@@ -123,33 +121,28 @@ public class dashBoardPage {
 
     public WebElement detailField(String field){
 
-     WebElement dynElm =   driver.findElement(By.xpath(" //td[contains(.,'"+field+"')]//following-sibling::td/div//table//tr[@class='x-form-item-input-row']"));
+         WebElement dynElm =   driver.findElement(By.xpath("//td[contains(.,"+field+")]//following-sibling::*/..//..//..//..//input[contains(@name, 'properties."+field.toLowerCase()+"')]"));
+
       return dynElm;
 
               }
 
 
 
+    public WebElement listSelection(String field){
 
-
-
-
-
-
-
-
-
-                                                                                 
-
-    public void verifySingleElements(WebElement xpath,String expectedValue){
-        String actualValue = xpath.getText().trim();
-       // Assert.assertEquals(actualValue, true, expectedValue.trim());
-        Assert.assertEquals(actualValue,expectedValue.trim());
+        WebElement dynElm =   driver.findElement(By.xpath("//li[contains(.,'"+field+"')]"));
+        return dynElm;
 
     }
 
 
+    public void verifySingleElements(WebElement xpath,String expectedValue){
 
+        System.out.println("Xpath : "+xpath+" actual : " +xpath.getText()+ " Expected : "+ expectedValue);
+        Assert.assertEquals(xpath.getText().trim(),expectedValue.trim());
+
+    }
 
 
 
@@ -157,8 +150,6 @@ public class dashBoardPage {
 
         driver.navigate().refresh();
     }
-
-
 
 
 
@@ -197,22 +188,42 @@ public class dashBoardPage {
         WebElement elements = (new WebDriverWait(driver, 30))
                 .until(ExpectedConditions.visibilityOf(DynamicElement));
 
+        Actions hover = new Actions(driver);
+        hover.moveToElement(DynamicElement).build().perform();
+
     }
 
 
 
-     public void waitAndTypeInField(WebElement DynamicElement,String content) {
+     public void dropDownList(WebElement DynamicElement,WebElement listView, String content) {
                                                                                                                       
          WebElement elements = (new WebDriverWait(driver, 30)).until(ExpectedConditions.visibilityOf(DynamicElement));
                                                                                                                       
          Actions hover = new Actions(driver);                                                                         
          hover.moveToElement(DynamicElement).build().perform();                                                       
          elements.click();
-         elements.clear();
-         elements.sendKeys(content);
-                                                                                                                      
-     }                                                                                                                
 
+
+         WebElement list = (new WebDriverWait(driver, 30)).until(ExpectedConditions.visibilityOf(listView));
+
+         Select dropdown = new Select(listView);
+         dropdown.selectByVisibleText(content.trim());
+                                                                                                                      
+     }
+
+    public void waitAndTypeInField(WebElement DynamicElement,String content) {
+
+        WebElement elements = (new WebDriverWait(driver, 30)).until(ExpectedConditions.visibilityOf(DynamicElement));
+
+        Actions hover = new Actions(driver);
+        hover.moveToElement(DynamicElement).build().perform();
+        elements.click();
+        elements.clear();
+        elements.sendKeys(content);
+        elements.sendKeys(Keys.RETURN);
+
+
+    }
 
 
 
