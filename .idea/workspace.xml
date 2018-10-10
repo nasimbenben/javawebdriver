@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8cc3a3cc-4552-447e-a95e-9bc5d9fae039" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/MultiSensePages/dashBoardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/MultiSensePages/dashBoardPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefs/CreteDeviceCasSetSIMSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefs/CreteDeviceCasSetSIMSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/CreateDeviceCasSetSIM.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/CreateDeviceCasSetSIM.feature" afterDir="false" />
     </list>
@@ -80,17 +79,59 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="869737960">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="Create device CAS set SIM" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Cucumber" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Create device CAS set SIM" value="1" />
+          <entry key="feature" value="248" />
+          <entry key="java" value="262" />
+          <entry key="txt" value="26" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Cucumber" value="249" />
+          <entry key="JAVA" value="262" />
+          <entry key="PLAIN_TEXT" value="26" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/StepDefs/CreteDeviceCasSetSIMSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="158" column="139" selection-start-line="158" selection-start-column="139" selection-end-line="158" selection-end-column="139" />
+            <state relative-caret-position="2109">
+              <caret line="161" column="5" lean-forward="true" selection-start-line="161" selection-start-column="5" selection-end-line="161" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/CreateDeviceCasSetSIM.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -107,11 +148,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/CreateDeviceCasSetSIM.feature">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Create device CAS set SIM">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="495">
+              <caret line="33" column="44" lean-forward="true" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -119,7 +160,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Pages/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
+            <state relative-caret-position="330">
               <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -179,8 +220,9 @@
         <option value="$PROJECT_DIR$/src/test/java/StepDefs/withouttestSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/AdminPages/ConnexoAdminOverviewPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/StepDefs/CreteDeviceCasSetSIMSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/MultiSensePages/dashBoardPage.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/Create device CAS set SIM" />
+        <option value="$PROJECT_DIR$/src/test/java/StepDefs/CreteDeviceCasSetSIMSteps.java" />
         <option value="$PROJECT_DIR$/src/test/resources/CreateDeviceCasSetSIM.feature" />
       </list>
     </option>
@@ -210,8 +252,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -235,12 +277,6 @@
               <item name="javawebdriver" type="b2602c69:ProjectViewProjectNode" />
               <item name="javawebdriver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javawebdriver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javawebdriver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -249,48 +285,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javawebdriver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javawebdriver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javawebdriver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javawebdriver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-              <item name="AdminPages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javawebdriver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javawebdriver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-              <item name="MultiSensePages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javawebdriver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javawebdriver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Runners" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javawebdriver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javawebdriver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="StepDefs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javawebdriver" type="b2602c69:ProjectViewProjectNode" />
@@ -298,11 +292,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javawebdriver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javawebdriver" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -319,6 +308,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539169454238" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -331,12 +321,15 @@
       <recent name="StepDefs" />
       <recent name="" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="StepDefs" />
       <recent name="Pages" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources" />
@@ -538,7 +531,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539080235568</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feature file add CAS SIM">
+      <created>1539170940781</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1539170940784</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -577,10 +577,9 @@
     <option name="totallyTimeSpent" value="126341000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25121164" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25396827" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -599,7 +598,6 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.21647818" side_tool="true" weight="0.47671232" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4927302" weight="0.32465753" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -609,6 +607,7 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.073505655" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.0" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25121164" />
@@ -650,7 +649,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="jnk" />
-    <option name="LAST_COMMIT_MESSAGE" value="jnk" />
+    <MESSAGE value="feature file add CAS SIM" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature file add CAS SIM" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/seleniumaster/javawebdriver/POC/test.java" />
@@ -662,22 +662,10 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/Pages/Login_Page.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Pages/BasePage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/POC.feature" />
-    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5-sources.jar!/cucumber/runtime/java/DefaultJavaObjectFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5-sources.jar!/cucumber/runtime/java/DefaultJavaObjectFactory.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/StepDefs/CreteDeviceCasSetSIMStepsTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/test.feature" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.7.0/selenium-api-3.7.0-sources.jar!/org/openqa/selenium/WebElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.7.0/selenium-api-3.7.0-sources.jar!/org/openqa/selenium/WebElement.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/StepDefs/POC.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -697,23 +685,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Qtest/repos/javawebdriver/src/test/java/Pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/AdminPages/ConnexoAdminOverviewPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Qtest/repos/javawebdriver/src/test/java/Pages/LoginPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/AdminPages/ConnexoAdminOverviewPage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
+        <state relative-caret-position="330">
           <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Create device CAS set SIM">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="44" lean-forward="true" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -729,8 +716,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/StepDefs/CreteDeviceCasSetSIMSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="158" column="139" selection-start-line="158" selection-start-column="139" selection-end-line="158" selection-end-column="139" />
+        <state relative-caret-position="2109">
+          <caret line="161" column="5" lean-forward="true" selection-start-line="161" selection-start-column="5" selection-end-line="161" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -739,8 +726,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/CreateDeviceCasSetSIM.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="495">
+          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
         </state>
       </provider>
     </entry>
