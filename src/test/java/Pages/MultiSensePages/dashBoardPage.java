@@ -52,7 +52,7 @@ public class dashBoardPage {
 
 
     public WebElement links(String links) {
-        WebElement link =   driver.findElement(By.xpath("//a[text() = '"+links.trim()+"']"));
+        WebElement link =   driver.findElement(By.xpath("//a[contains(.,'"+links+"')]"));
         return link;
     }
 
