@@ -52,7 +52,8 @@ public class CreteDeviceCasSetSIMSteps {
     @When("^user sees \"([^\"]*)\" overview page$")
     public void user_sees_overview_page(String pageHeader) throws Throwable {
 
-       this.dashBoardPage.visibilityOfElement(this.dashBoardPage.headerPage(pageHeader));
+        Thread.sleep(300);
+       this.dashBoardPage.verifySingleElements(this.dashBoardPage.headerPage(pageHeader),pageHeader);
 
     }
 
@@ -90,6 +91,7 @@ public class CreteDeviceCasSetSIMSteps {
     public void user_clicks_on(String link) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         this.dashBoardPage.waitAndClickOnElement(this.dashBoardPage.links(link));
+
     }
 
 
@@ -116,6 +118,7 @@ public class CreteDeviceCasSetSIMSteps {
     public void user_verifies_if_the_objects_has_the_correct_values(DataTable verifyElements) throws Throwable {
 
         for (Map<String, String> data : verifyElements.asMaps(String.class, String.class)) {
+            Thread.sleep(300);
             this.dashBoardPage.visibilityOfElement(this.dashBoardPage.deviceAttributesSingleElement(data.get("Object")));
             this.dashBoardPage.verifySingleElements(this.dashBoardPage.deviceAttributesSingleElement(data.get("Object")), data.get("Value"));
         }
@@ -133,14 +136,11 @@ public class CreteDeviceCasSetSIMSteps {
     public void user_changes_the_Values_from_old_value_to_new_value(DataTable content) throws Throwable {
 
 
-        this.dashBoardPage.visibilityOfElement(this.dashBoardPage.headerPage("Edit"));
-
-
         for (Map<String, String> data : content.asMaps(String.class, String.class)) {
-            this.dashBoardPage.visibilityOfElement(this.dashBoardPage.detailField(data.get("object")));
-            this.dashBoardPage.waitAndTypeInField(this.dashBoardPage.detailField(data.get("object").trim()),data.get("value"));
 
-            //this.dashBoardPage.dropDownList(this.dashBoardPage.detailField(data.get("object").trim()),this.dashBoardPage.listSelection(data.get("value").trim()),data.get("value"));
+            Thread.sleep(600);
+            this.dashBoardPage.visibilityOfElement(this.dashBoardPage.detailField(data.get("object"),this.dashBoardPage.concatString(data.get("object"))));
+            this.dashBoardPage.waitAndTypeInField(this.dashBoardPage.detailField(data.get("object"), this.dashBoardPage.concatString(data.get("object"))),data.get("value"));
         }
 
     }
@@ -160,4 +160,33 @@ public class CreteDeviceCasSetSIMSteps {
 
         }
     }
+    @Then("^user clicks on \"([^\"]*)\" button$")
+    public void user_clicks_on_button(String link) throws Throwable {
+        this.dashBoardPage.waitAndClickOnElement(this.dashBoardPage.addButton(link));
+        Thread.sleep(300);
+    }
+
+    @Then("^user verifies if the below attributes has not the incorrect values$")
+    public void user_verifies_if_the_below_attributes_has_not_the_incorrect_values(DataTable verifyElements) throws Throwable {
+
+        for (Map<String, String> data : verifyElements.asMaps(String.class, String.class)) {
+            this.dashBoardPage.visibilityOfElement(this.dashBoardPage.deviceAttributesMultipleElement(data.get("object"),data.get("attribute")));
+            this.dashBoardPage.verifyIncorrectSingleElements(this.dashBoardPage.deviceAttributesMultipleElement(data.get("object"),data.get("attribute")), data.get("value"));
+
+        }
+
+
+    }
+
+
+
+    @Then("^user sees the message \"([^\"]*)\"$")
+    public void user_sees_the_message(String message) throws Throwable {
+        Thread.sleep(600);
+        this.dashBoardPage.verifySingleElements(this.dashBoardPage.errorMessage(message),message);
+
+      }
+
+
+
 }

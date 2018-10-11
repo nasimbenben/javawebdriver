@@ -11,7 +11,7 @@ Feature: Verify device CAS set SIM information
     And user clicks on "Test Ruben" under Device groups
     And user selects "RonMeter" in a list overview
     And user clicks on "Device attributes" of the object menu
-    When user sees "Device attributes" overview page
+    #When user sees "Device attributes" overview page
     Then user verifies if the objects has the correct values
       | Object                | Value                                |
       | Name                  | RonMeter                             |
@@ -53,3 +53,7 @@ Feature: Verify device CAS set SIM information
 #And user verifies the "SIM" details and the "Status" should be "Active"
 #And user verifies the "SIM" details and the "ICCID" should be "55555555799"
 #And user verifies the "SIM" details and the "Provider" should be "Telfort"
+
+
+
+

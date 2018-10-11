@@ -18,9 +18,12 @@ public class dashBoardPage {
 
 
     public WebElement headerPage(String overviewPage) {
-        WebElement HeaderPage =   driver.findElement(By.xpath("//span[text()[contains(.,'"+overviewPage.trim()+"')]][@class='x-header-text x-panel-header-text x-panel-header-text-large']"));
+
+     //   WebElement HeaderPage =   driver.findElement(By.xpath("//span[contains(text(),"+overviewPage.trim()+")][@class='x-header-text x-panel-header-text x-panel-header-text-large']"));
+      WebElement HeaderPage =   driver.findElement(By.xpath("//span[@class='x-header-text x-panel-header-text x-panel-header-text-large']"));
         return HeaderPage;
     }
+
 
 
     public WebElement openMainMenu() {
@@ -52,9 +55,17 @@ public class dashBoardPage {
 
 
     public WebElement links(String links) {
-        WebElement link =   driver.findElement(By.xpath("//a[contains(.,'"+links+"')]"));
+        WebElement link =   driver.findElement(By.linkText(links));
         return link;
     }
+
+
+    public WebElement addButton(String button){
+
+        WebElement link =   driver.findElement(By.linkText(button.trim()));
+        return link;
+    }
+
 
     public WebElement errorButton() {
         WebElement error =   driver.findElement(By.xpath("//div[starts-with(@data-qtip,'Connexo has')]"));
@@ -103,7 +114,7 @@ public class dashBoardPage {
 
     public WebElement deviceAttributesActionSubButton(String subButton){
 
-     WebElement dynElm =   driver.findElement(By.xpath("//a//span[contains(.,'"+subButton.trim()+"')]"));
+     WebElement dynElm =   driver.findElement(By.xpath("//span[text()='Actions']/following::a//span[contains(.,'"+subButton.trim()+"')]"));
       return dynElm;
 
     }
@@ -118,14 +129,41 @@ public class dashBoardPage {
 
 
 
+       public String concatString(String string){
 
-    public WebElement detailField(String field){
+           String split[] = string.split(" ");
+           String low = split[0].toLowerCase();
 
-         WebElement dynElm =   driver.findElement(By.xpath("//td[contains(.,"+field+")]//following-sibling::*/..//..//..//..//input[contains(@name, 'properties."+field.toLowerCase()+"')]"));
+        try {
+
+            String concat = low + split[1];
+            System.out.println("Concat :   "+concat);
+            return concat;
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Catched string :  "+low);
+            return low;
+
+        }
+
+    }
+
+
+
+    public WebElement detailField(String field,String concat){
+
+         WebElement dynElm =   driver.findElement(By.xpath("//td[contains(.,'"+field+"')]//following-sibling::*/..//..//..//..//input[contains(@name, 'properties."+concat+"')]"));
 
       return dynElm;
 
               }
+
+
+    public WebElement errorMessage(String error){
+
+        WebElement dynElm =   driver.findElement(By.xpath("//div[contains(.,'"+error+"') and contains(@id,'panel') and contains(@id, 'innerCt')]"));
+        return dynElm;
+    }
 
 
 
@@ -139,10 +177,21 @@ public class dashBoardPage {
 
     public void verifySingleElements(WebElement xpath,String expectedValue){
 
-        System.out.println("Xpath : "+xpath+" actual : " +xpath.getText()+ " Expected : "+ expectedValue);
-        Assert.assertEquals(xpath.getText().trim(),expectedValue.trim());
+        System.out.println("Xpath : "+xpath.getText().trim().replaceAll("[-+.^:,']","")+" actual : " +expectedValue.trim().replaceAll("[-+.^:,']",""));
+        Assert.assertEquals(xpath.getText().trim().replaceAll("[-+.^:,']",""),expectedValue.trim().replaceAll("[-+.^:,']",""));
 
     }
+
+
+    public void verifyIncorrectSingleElements(WebElement xpath,String expectedValue){
+
+
+
+        System.out.println("ACTUAL : "+xpath.getText().trim().replaceAll("[-+.^:,']","")+" EXPECTED : " +expectedValue.trim().replaceAll("[-+.^:,']",""));
+        Assert.assertNotEquals(xpath.getText().trim().replaceAll("[-+.^:,']",""),expectedValue.trim().replaceAll("[-+.^:,']",""));
+
+    }
+
 
 
 
