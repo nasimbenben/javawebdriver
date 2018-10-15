@@ -1,10 +1,12 @@
 package Pages.MultiSensePages;
 
 import org.junit.Assert;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class dashBoardPage {
@@ -58,20 +60,6 @@ public class dashBoardPage {
         WebElement link =   driver.findElement(By.linkText(links));
         return link;
     }
-
-
-    public WebElement addButton(String button){
-
-        WebElement link =   driver.findElement(By.linkText(button.trim()));
-        return link;
-    }
-
-
-    public WebElement errorButton() {
-        WebElement error =   driver.findElement(By.xpath("//div[starts-with(@data-qtip,'Connexo has')]"));
-        return error;
-    }
-
 
 
 
@@ -129,21 +117,75 @@ public class dashBoardPage {
 
 
 
-       public String concatString(String string){
+    public String concatString(String string) {
+        String property;
+        //Battery
+        if (string.equals("Battery type")) {
+            property = "batteryType";
+            return property;
+        } else if (string.equals("Battery replacement date")) {
+            property = "properties.batteryReplacementDate";
+            return property;
+            //General
+        } else if (string.equals("Construction Year")) {
+            property = "properties.constructionYear";
+            return property;
+        } else if (string.equals("Equipment Identifier")) {
+            property = "properties.equipmentIdentifier";
+            return property;
+            //Modem
+        } else if (string.equals("Communication")) {
+            property = "properties.communicationModuleId";
+            return property;
+        } else if (string.equals("IMEI")) {
+            property = "properties.imei";
+            return property;
+            //SIM
+        } else if (string.equals("Status")) {
+            property = "properties.status";
+            return property;
+        } else if (string.equals("ICCID")) {
+            property = "properties.iccid";
+            return property;
+        } else if (string.equals("Provider")) {
+            property = "properties.provider";
+            return property;
+        } else if (string.equals("Format")) {
+            property = "properties.format";
+            return property;
+        } else if (string.contains("Batch")) {
+            property = "properties.batchId";
+            return property;
+        } else if (string.equals("IMSI")) {
+            property = "properties.imsi";
+            return property;
+        } else if (string.equals("Name")) {
+            property = "name";
+            return property;
+        } else if (string.equals("Service category")) {
+            property = "serviceCategory";
+            return property;
+        } else if (string.equals("Type of usage point")) {
+            property = "typeOfUsagePoint";
+            return property;
+        } else if (string.equals("Grid operator")) {
+            property = "properties.gridOperator";
+            return property;
+        } else if (string.equals("Administrative status")) {
+            property = "properties.administrativeStatus";
+            return property;
+        } else if (string.equals("External Grid Operator Master")) {
+            property = "properties.externalGridOperatorMaster";
+            return property;
+        } else if (string.equals("Transition")) {
+            property = "id";
+            return property;
+        } else if (string.equals("Connection state")) {
+            property = "properties.set.connection.state.property.name";
+            return property;
 
-           String split[] = string.split(" ");
-           String low = split[0].toLowerCase();
-
-        try {
-
-            String concat = low + split[1];
-            System.out.println("Concat :   "+concat);
-            return concat;
-        }
-        catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Catched string :  "+low);
-            return low;
-
+        } else {
+            return null;
         }
 
     }
@@ -152,26 +194,17 @@ public class dashBoardPage {
 
     public WebElement detailField(String field,String concat){
 
-         WebElement dynElm =   driver.findElement(By.xpath("//td[contains(.,'"+field+"')]//following-sibling::*/..//..//..//..//input[contains(@name, 'properties."+concat+"')]"));
+         WebElement dynElm =   driver.findElement(By.xpath("//td[contains(.,'"+field+"')]//following-sibling::*/..//..//..//..//input[contains(@name, '"+concat.trim()+"')]"));
 
       return dynElm;
 
               }
 
 
-    public WebElement errorMessage(String error){
+    public WebElement errorMessage(String error) {
 
-        WebElement dynElm =   driver.findElement(By.xpath("//div[contains(.,'"+error+"') and contains(@id,'panel') and contains(@id, 'innerCt')]"));
+        WebElement dynElm = driver.findElement(By.xpath("//td[contains(.,'" + error + "')]/following-sibling::td[1]//div/ul/li"));
         return dynElm;
-    }
-
-
-
-    public WebElement listSelection(String field){
-
-        WebElement dynElm =   driver.findElement(By.xpath("//li[contains(.,'"+field+"')]"));
-        return dynElm;
-
     }
 
 
@@ -185,39 +218,11 @@ public class dashBoardPage {
 
     public void verifyIncorrectSingleElements(WebElement xpath,String expectedValue){
 
-
-
         System.out.println("ACTUAL : "+xpath.getText().trim().replaceAll("[-+.^:,']","")+" EXPECTED : " +expectedValue.trim().replaceAll("[-+.^:,']",""));
         Assert.assertNotEquals(xpath.getText().trim().replaceAll("[-+.^:,']",""),expectedValue.trim().replaceAll("[-+.^:,']",""));
 
     }
 
-
-
-
-    public void refreshPage(WebElement DynamicElement) {
-
-        driver.navigate().refresh();
-    }
-
-
-
-
-        public void errorCheck(WebElement DynamicElement) {
-        try {
-
-            WebElement element = (new WebDriverWait(driver, 30))
-                    .until(ExpectedConditions.visibilityOf(DynamicElement));
-
-            Actions hover = new Actions(driver);
-            hover.moveToElement((DynamicElement)).build().perform();
-            this.errorButton().click();
-        }
-        catch (NoSuchElementException e){
-
-                }
-
-        }
 
 
     ////////Common Logic for all elements
@@ -236,29 +241,9 @@ public class dashBoardPage {
 
         WebElement elements = (new WebDriverWait(driver, 30))
                 .until(ExpectedConditions.visibilityOf(DynamicElement));
-
-        Actions hover = new Actions(driver);
-        hover.moveToElement(DynamicElement).build().perform();
-
+        elements.isDisplayed();
     }
 
-
-
-     public void dropDownList(WebElement DynamicElement,WebElement listView, String content) {
-                                                                                                                      
-         WebElement elements = (new WebDriverWait(driver, 30)).until(ExpectedConditions.visibilityOf(DynamicElement));
-                                                                                                                      
-         Actions hover = new Actions(driver);                                                                         
-         hover.moveToElement(DynamicElement).build().perform();                                                       
-         elements.click();
-
-
-         WebElement list = (new WebDriverWait(driver, 30)).until(ExpectedConditions.visibilityOf(listView));
-
-         Select dropdown = new Select(listView);
-         dropdown.selectByVisibleText(content.trim());
-                                                                                                                      
-     }
 
     public void waitAndTypeInField(WebElement DynamicElement,String content) {
 
@@ -273,9 +258,5 @@ public class dashBoardPage {
 
 
     }
-
-
-
-
 
 }

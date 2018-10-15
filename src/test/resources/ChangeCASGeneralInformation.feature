@@ -15,11 +15,11 @@ Feature: Verify device CAS set General information
     Then user wants to change the information i click on Edit "General" under the "Actions" button
     Then user changes the Values from old value to new value
       | object               | value             |
-      | Construction Year    | 2018             |
+      | Construction Year    | 2017             |
       | Equipment Identifier | 12006372618392817 |
     And user clicks on the "Save" button
     When user sees "Device attributes" overview page
     Then user verifies if the below attributes has the correct values
       | object  | attribute            | value             |
-      | General | Construction Year    | 2018              |
+      | General | Construction Year    | 2017          |
       | General | Equipment Identifier | 12006372618392817 |

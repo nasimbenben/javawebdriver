@@ -52,7 +52,7 @@ public class CreteDeviceCasSetSIMSteps {
     @When("^user sees \"([^\"]*)\" overview page$")
     public void user_sees_overview_page(String pageHeader) throws Throwable {
 
-        Thread.sleep(300);
+        Thread.sleep(600);
        this.dashBoardPage.verifySingleElements(this.dashBoardPage.headerPage(pageHeader),pageHeader);
 
     }
@@ -101,10 +101,6 @@ public class CreteDeviceCasSetSIMSteps {
         this.dashBoardPage.waitAndClickOnElement(this.dashBoardPage.objectMenu(objectItem));
     }
 
-    @Then("^user verifies the \"([^\"]*)\" details and the \"([^\"]*)\" should be \"([^\"]*)\"$")
-    public void user_verifies_the_details_and_the_should_be(String arg1, String arg2, String arg3) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-    }
 
     @Then("^user verifies  if \"([^\"]*)\" has the value \"([^\"]*)\"$")
     public void user_verifies_if_has_the_value(String object, String content) throws Throwable {
@@ -118,7 +114,7 @@ public class CreteDeviceCasSetSIMSteps {
     public void user_verifies_if_the_objects_has_the_correct_values(DataTable verifyElements) throws Throwable {
 
         for (Map<String, String> data : verifyElements.asMaps(String.class, String.class)) {
-            Thread.sleep(300);
+            Thread.sleep(600);
             this.dashBoardPage.visibilityOfElement(this.dashBoardPage.deviceAttributesSingleElement(data.get("Object")));
             this.dashBoardPage.verifySingleElements(this.dashBoardPage.deviceAttributesSingleElement(data.get("Object")), data.get("Value"));
         }
@@ -162,8 +158,8 @@ public class CreteDeviceCasSetSIMSteps {
     }
     @Then("^user clicks on \"([^\"]*)\" button$")
     public void user_clicks_on_button(String link) throws Throwable {
-        this.dashBoardPage.waitAndClickOnElement(this.dashBoardPage.addButton(link));
-        Thread.sleep(300);
+       this.dashBoardPage.waitAndClickOnElement(this.dashBoardPage.links(link));
+        Thread.sleep(600);
     }
 
     @Then("^user verifies if the below attributes has not the incorrect values$")
@@ -187,6 +183,13 @@ public class CreteDeviceCasSetSIMSteps {
 
       }
 
+
+    @Then("^user sees the message under \"([^\"]*)\" the error message \"([^\"]*)\"$")
+    public void userSeesTheMessageUnderTheErrorMessage(String object, String message) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        this.dashBoardPage.verifySingleElements(this.dashBoardPage.errorMessage(object), message);
+
+    }
 
 
 }

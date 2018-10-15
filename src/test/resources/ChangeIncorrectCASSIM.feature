@@ -23,17 +23,20 @@ Feature: Verify incorrect device CAS set SIM information
   Then user changes the Values from old value to new value
     |object   | value         |
     |Status   | SuperAaan     |
-    |ICCID    | vijfnegen     |
+    |ICCID    |               |
+    |Provider |               |
     |Format   | Simloos)      |
     |Batch    | vijfvierdrie  |
     |IMSI     | tweeacht      |
   And user clicks on the "Save" button
     When user sees "Edit 'Infinite'" overview page
-    Then user sees the message "There are errors on this page that require your attention."
+    Then user sees the message under "ICCID" the error message "This field is required"
+    Then user sees the message under "Provider" the error message "This field is required"
     Then user changes the Values from old value to new value
-      |object   | value         |
-      |Status   | Active        |
-      |ICCID    |55555555799    |
+      |object   | value            |
+      |Status   | Active           |
+      |ICCID    |55555555799       |
+      |Provider  |BosscheBol Telecom|
     And user clicks on the "Save" button
     And user clicks on "Device attributes" of the object menu
     When user sees "Device attributes" overview page
