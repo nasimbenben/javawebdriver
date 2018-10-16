@@ -323,7 +323,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539612326780" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539683766718" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -365,7 +365,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: ChangeIncorrectCASSIM">
+  <component name="RunManager" selected="Cucumber java.Feature: ChangeIncorrectCASModem">
+    <configuration name="Feature: ChangeIncorrectCASModem" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/ChangeIncorrectCASModem.feature" />
+      <option name="GLUE" value="StepDefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="javawebdriver" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: ChangeIncorrectCASModem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Feature: ChangeIncorrectCASSIM" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/ChangeIncorrectCASSIM.feature" />
@@ -439,39 +457,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: As an end user i want to add unaccepted the SIM details for a device and verify if they are not saved." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/testCSV.feature" />
-      <option name="GLUE" value="StepDefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="javawebdriver" />
-      <option name="NAME_FILTER" value="^As an end user i want to add unaccepted the SIM details for a device and verify if they are not saved\.$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^As an end user i want to add unaccepted the SIM details for a device and verify if they are not saved\.$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: As an end user i want to add unaccepted the SIM details for a device and verify if they are not saved." />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Cucumber java.Feature: CreateIncorectDeviceCasSIM" />
-      <item itemvalue="Cucumber java.Scenario: As an end user i want to add unaccepted the SIM details for a device and verify if they are not saved." />
       <item itemvalue="Cucumber java.Feature: testCSV" />
       <item itemvalue="Cucumber java.Scenario: As an end user i want to add unaccepted the SIM details for a device and verify if they are not saved. (1)" />
       <item itemvalue="Cucumber java.Feature: ChangeIncorrectCASSIM" />
+      <item itemvalue="Cucumber java.Feature: ChangeIncorrectCASModem" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Feature: ChangeIncorrectCASModem" />
         <item itemvalue="Cucumber java.Feature: ChangeIncorrectCASSIM" />
         <item itemvalue="Cucumber java.Feature: CreateIncorectDeviceCasSIM" />
         <item itemvalue="Cucumber java.Scenario: As an end user i want to add unaccepted the SIM details for a device and verify if they are not saved. (1)" />
         <item itemvalue="Cucumber java.Feature: testCSV" />
-        <item itemvalue="Cucumber java.Scenario: As an end user i want to add unaccepted the SIM details for a device and verify if they are not saved." />
       </list>
     </recent_temporary>
   </component>
