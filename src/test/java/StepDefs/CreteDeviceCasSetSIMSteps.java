@@ -174,8 +174,6 @@ public class CreteDeviceCasSetSIMSteps {
 
     }
 
-
-
     @Then("^user sees the message \"([^\"]*)\"$")
     public void user_sees_the_message(String message) throws Throwable {
         Thread.sleep(600);
@@ -188,6 +186,13 @@ public class CreteDeviceCasSetSIMSteps {
     public void userSeesTheMessageUnderTheErrorMessage(String object, String message) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         this.dashBoardPage.verifySingleElements(this.dashBoardPage.errorMessage(object), message);
+
+    }
+
+
+    @When("^i shine the light on your \"([^\"]*)\"$")
+    public void i_shine_the_light_on_your(String arg1) throws Throwable {
+        this.dashBoardPage.concatString(arg1);
 
     }
 

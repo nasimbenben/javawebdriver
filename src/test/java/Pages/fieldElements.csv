@@ -1,0 +1,20 @@
+Battery type,batteryType
+Battery replacement date,properties.batteryReplacementDate
+Construction Year,properties.constructionYear
+Equipment Identifier,properties.equipmentIdentifier
+Communication,properties.communicationModuleId
+IMEI,properties.imei
+Status,properties.status
+ICCID,properties.iccid
+Provider,properties.provider
+Format,properties.format
+Batch,properties.batchId
+IMSI,properties.imsi
+Name,name
+Service category,serviceCategory
+Type of usage point,typeOfUsagePoint
+Administrative status,properties.administrativeStatus
+External Grid Operator Master,properties.externalGridOperatorMaster
+Transition,id
+Connection state,properties.set.connection.state.property.name
+Grid operator,properties.gridOperator

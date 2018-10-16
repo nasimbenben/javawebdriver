@@ -1,3 +1,6 @@
+@run
+Feature: Create incorrect device CAS SIM
+
 Scenario: As an end user i want to add unaccepted the SIM details for a device and verify if they are not saved.
 Given user is logged in as user "Enexis_NasimBenbouchta" and password "SzrhapMkP9"
 When user sees "Dashboard" overview page
@@ -19,8 +22,8 @@ Then user changes the Values from old value to new value
 |Format   | Simloos)      |
 |Batch    | vijfvierdrie  |
 |IMSI     | tweeacht      |
-And user clicks on the "Save" button
-When user sees "Edit 'Infinite'" overview page
+And user clicks on the "Add" button
+When user sees "Add 'SIM' version" overview page
 Then user sees the message under "ICCID" the error message "This field is required"
 Then user sees the message under "Provider" the error message "This field is required"
 Then user changes the Values from old value to new value
@@ -28,7 +31,7 @@ Then user changes the Values from old value to new value
 |Status   | Active           |
 |ICCID    |55555555799       |
 |Provider  |BosscheBol Telecom|
-And user clicks on the "Save" button
+And user clicks on the "Add" button
 And user clicks on "Device attributes" of the object menu
 When user sees "Device attributes" overview page
 Then user verifies if the below attributes has not the incorrect values
@@ -38,3 +41,6 @@ Then user verifies if the below attributes has not the incorrect values
 |SIM   |Format   |Simloos)              |
 |SIM   |Batch ID |vijfvierdrie          |
 |SIM   |IMSI     |tweeacht              |
+  Then user verifies if the objects has the correct values
+    |SIM   |ICCID        |55555555799          |
+    |SIM   |Provider     |BosscheBol Telecom   |

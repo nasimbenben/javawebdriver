@@ -9,6 +9,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class dashBoardPage {
 
 
@@ -117,80 +121,27 @@ public class dashBoardPage {
 
 
 
-    public String concatString(String string) {
-        String property;
-        //Battery
-        if (string.equals("Battery type")) {
-            property = "batteryType";
-            return property;
-        } else if (string.equals("Battery replacement date")) {
-            property = "properties.batteryReplacementDate";
-            return property;
-            //General
-        } else if (string.equals("Construction Year")) {
-            property = "properties.constructionYear";
-            return property;
-        } else if (string.equals("Equipment Identifier")) {
-            property = "properties.equipmentIdentifier";
-            return property;
-            //Modem
-        } else if (string.equals("Communication")) {
-            property = "properties.communicationModuleId";
-            return property;
-        } else if (string.equals("IMEI")) {
-            property = "properties.imei";
-            return property;
-            //SIM
-        } else if (string.equals("Status")) {
-            property = "properties.status";
-            return property;
-        } else if (string.equals("ICCID")) {
-            property = "properties.iccid";
-            return property;
-        } else if (string.equals("Provider")) {
-            property = "properties.provider";
-            return property;
-        } else if (string.equals("Format")) {
-            property = "properties.format";
-            return property;
-        } else if (string.contains("Batch")) {
-            property = "properties.batchId";
-            return property;
-        } else if (string.equals("IMSI")) {
-            property = "properties.imsi";
-            return property;
-        } else if (string.equals("Name")) {
-            property = "name";
-            return property;
-        } else if (string.equals("Service category")) {
-            property = "serviceCategory";
-            return property;
-        } else if (string.equals("Type of usage point")) {
-            property = "typeOfUsagePoint";
-            return property;
-        } else if (string.equals("Grid operator")) {
-            property = "properties.gridOperator";
-            return property;
-        } else if (string.equals("Administrative status")) {
-            property = "properties.administrativeStatus";
-            return property;
-        } else if (string.equals("External Grid Operator Master")) {
-            property = "properties.externalGridOperatorMaster";
-            return property;
-        } else if (string.equals("Transition")) {
-            property = "id";
-            return property;
-        } else if (string.equals("Connection state")) {
-            property = "properties.set.connection.state.property.name";
-            return property;
+    public String concatString(String field)  {
 
-        } else {
-            return null;
-        }
+        String csvFile = "/Users/nasimbenbouchta/Desktop/javawebdriver/src/test/java/Pages/fieldElements.csv";
+        String line = "";
+        String cvsSplitBy = ",";
 
+            try {
+                BufferedReader br = new BufferedReader(new FileReader(csvFile));
+                while ((line = br.readLine()) != null) {
+                    String[] list = line.split(cvsSplitBy);
+
+                    if(field.equals(list[0])) {
+                        return  list[1];
+                    }
+                  }
+          } catch (IOException e) {
+                            e.printStackTrace();
+            }
+        System.out.println("PLEASE ADD element in the CSV file");
+        return null;
     }
-
-
 
     public WebElement detailField(String field,String concat){
 
